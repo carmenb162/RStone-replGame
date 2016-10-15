@@ -1,3 +1,8 @@
-alive, 3, 2,Captain your about to die. Press a button. (1-> Red 2->Blue)
-dead, 0, 0,The cabin glass in front of you begins to radiate a spiderweb of cracks. For an instant you see a vapor coming through the glass. The glass breaks and you are sucked out into space. Game over.
-alive, 0, 0, puts "line 3"
+alive,3,2,Captain your about to die. Press a button. (1-> Red 2-> Blue)
+dead,0,0,The cabin glass in front of you begins to radiate a spiderweb of cracks. For an instant you see a vapor coming through the glass. The glass breaks and you are sucked out into space. Game over.
+alive,4,5,The planet outside your cabin window spins rapidly as your ship barrel rolls through space. A loud creaking noise emanates from the back of the ship as it slowly begins to course correct and stop rotating. What's next? (1-> Head to an escape pod 2->Stay aboard and finish the mission)
+alive,6,7,You unbuckle from your seat and begin to move to the back of the ship. There is one escape pod left. Would you like to continue your escape or stay and finish the mission? (1->Stay 2->Escape)
+#
+alive,8,9,You push off from the bulkhead and drift towards the engine room. Once in the engine room you see the the dilithium crystal is dislodged. It looks like if you kick it the crystal will fall back into place. (1-> Kick the crystal 2-> Wait make sure it's safe first)
+#
+dead,0,0,As your foot makes contact with the crystal it dislodges an falls into place. Immediately the crystal begins to glow. It's looking pretty hot. It doesn't seem to be slowing down. The crystal cracks down the middle spilling radiation in the room. The crystal container begins to melt. A drop of molten crystal hits the floor melting through the hull. Immediately the hull rips apart and you are sucked out into space.

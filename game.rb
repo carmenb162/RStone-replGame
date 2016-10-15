@@ -20,7 +20,7 @@ def chapter_creator(death_status, choice_1, choice_2, story_text)
   return chapter
 end
 
-# ITERATE ARRAY
+# READ BOOK
 def read_book(incoming_chapter)
   valid_choices =*(1..2)
   user_choice = nil
@@ -32,9 +32,13 @@ def read_book(incoming_chapter)
     end
   else
     abort(incoming_chapter[:story_text])
-
   end
-  return {next_chapter:(user_choice - 1), death_status:incoming_chapter[:death_status] }
+  if user_choice == 1
+    next_chapter = incoming_chapter[:choice_1].to_i
+  else
+    next_chapter = incoming_chapter[:choice_2].to_i
+  end
+  return {next_chapter:next_chapter, death_status:incoming_chapter[:death_status] }
 end
 
 # READ CSV & STORE HASH IN ARRAY
@@ -47,11 +51,11 @@ end
 
 death_status = nil
 current_chapter = 0
-until death_status == true
+until death_status == "dead"
   if current_chapter == 0
     response_hash = read_book(story[0])
   else
-     response_hash = read_book(story[response_hash[:next_chapter]])
+     response_hash = read_book(story[response_hash[:next_chapter] - 1])
   end
   death_status = response_hash[:death_status]
   current_chapter = response_hash[:next_chapter]
