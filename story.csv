@@ -1,0 +1,3 @@
+alive, 3, 2,Captain your about to die. Press a button. (1-> Red 2->Blue)
+dead, 0, 0, puts "line 2"
+alive, 0, 0, puts "line 3"
